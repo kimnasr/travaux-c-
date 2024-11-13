@@ -5,6 +5,7 @@
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QComboBox>
 
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +27,9 @@ private slots:
     void afficherContacts();
     void rechercherContact();
     void supprimerContact();
+    void updateContact() ;
+
+    void filtrerParCategorie();
 
     void on_pushButtonAjouter_clicked();
 
@@ -33,8 +37,19 @@ private slots:
 
     void on_pushButtonRechercher_clicked();
 
+    void on_Update_clicked();
+
+    void on_comboBoxCategories_currentIndexChanged(int index);
+
+    void on_comboBoxCategories_textActivated(const QString &arg1);
+
+    void on_comboBoxCategories_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::MainWindow *ui;
+    QComboBox *comboBoxCategories;
+
+    void remplirComboBoxCategories();
     void connectToDatabase();
 };
 
