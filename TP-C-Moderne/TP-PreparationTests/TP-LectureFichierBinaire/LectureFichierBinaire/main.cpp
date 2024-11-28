@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
     // Nom du fichier binaire à lire
-    string nomFichier = "/Users/nasr/Documents/Personnel/formation/objet C++/aout024/TP C++/TP-n2/TP-n3/TP constructeur/Thread/LectureFichierBinaire/fichier_binaire.dat";
+    string nomFichier = "/Users/nasr/Documents/Personnel/formation/objet C++/aout024/TP C++/TP-n2/TP-n3/TP constructeur/Thread/LectureFichierBinaire/LectureFichierBinaire/fichier_binaire.dat";
 
     // Ouverture du fichier en mode binaire
     ifstream fichier(nomFichier, ios::binary);

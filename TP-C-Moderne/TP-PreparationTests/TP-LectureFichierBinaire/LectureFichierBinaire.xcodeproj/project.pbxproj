@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		CD4BB8FE2CF9186C00A184F2 /* LectureFichierBinaire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LectureFichierBinaire; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4BB9012CF9186C00A184F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CD4BB9082CF91C0900A184F2 /* fichier_binaire.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = fichier_binaire.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4BB9012CF9186C00A184F2 /* main.cpp */,
+				CD4BB9082CF91C0900A184F2 /* fichier_binaire.dat */,
 			);
 			path = LectureFichierBinaire;
 			sourceTree = "<group>";
