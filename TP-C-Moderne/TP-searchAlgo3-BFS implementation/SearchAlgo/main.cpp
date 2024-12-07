@@ -140,6 +140,16 @@ int main() {
 
 // implementation of BFS in C++
 //0 1 2 3 Program ended with exit code: 0
+
+/*
+ Techniques de parcours de graphes pour une recherche efficace
+
+ Le parcours de graphes est un aspect fondamental des algorithmes de graphes, permettant une recherche et une récupération de données efficaces. Dans cette section, nous explorerons diverses techniques de parcours, en nous concentrant sur leur mise en œuvre et leurs performances dans différents scénarios.
+ Recherche en largeur (BFS)
+ 
+ BFS est une méthode de parcours qui explore tous les sommets au niveau de profondeur actuel avant de passer aux sommets au niveau de profondeur suivant. Cette technique est particulièrement utile pour trouver le chemin le plus court dans les graphes non pondérés. L'algorithme peut être implémenté à l'aide d'une structure de données de file d'attente, qui permet une exploration systématique des nœuds.
+ */
+
 #include <iostream>
 #include <vector>
 #include <queue>
