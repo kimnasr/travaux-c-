@@ -89,6 +89,20 @@
 
 
 /*
+ 
+ Pour implémenter l'algorithme de Dijkstra en C++, nous commençons par définir les structures de données nécessaires. L'algorithme est conçu pour trouver le chemin le plus court d'un nœud source à tous les autres nœuds d'un graphe pondéré. Voici une description étape par étape de l'implémentation :
+ Structures de données
+ Représentation graphique : nous pouvons représenter le graphe à l'aide d'une liste d'adjacence. Chaque nœud aura une liste de paires, où chaque paire se compose d'un nœud voisin et du poids de l'arête qui les relie.
+ File d'attente prioritaire : une file d'attente prioritaire (souvent implémentée avec un tas minimal) est utilisée pour récupérer efficacement le nœud suivant avec la plus petite distance provisoire.
+ Tableau de distance : un tableau pour suivre la distance la plus courte entre le nœud source et chaque nœud du graphe.
+ Ensemble visité : un ensemble pour suivre les nœuds qui ont déjà été traités.
+ Étapes d'implémentation
+ Initialisation : définissez la distance au nœud source sur 0 et tous les autres nœuds sur l'infini. Insérez le nœud source dans la file d'attente prioritaire.
+ Boucle principale : tant que la file d'attente prioritaire n'est pas vide :
+ Extraire le nœud avec la plus petite distance.
+ Pour chaque voisin de ce nœud, calculer la distance provisoire. Si cette distance est inférieure à la distance actuellement connue, mettre à jour la distance et insérer le voisin dans la file d'attente prioritaire.
+ Termination : l'algorithme se termine lorsque tous les nœuds ont été traités et que le tableau de distance contient les chemins les plus courts à partir du nœud source.
+ 
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -148,7 +162,7 @@ int main() {
  Recherche en largeur (BFS)
  
  BFS est une méthode de parcours qui explore tous les sommets au niveau de profondeur actuel avant de passer aux sommets au niveau de profondeur suivant. Cette technique est particulièrement utile pour trouver le chemin le plus court dans les graphes non pondérés. L'algorithme peut être implémenté à l'aide d'une structure de données de file d'attente, qui permet une exploration systématique des nœuds.
- */
+ 
 
 #include <iostream>
 #include <vector>
@@ -179,4 +193,66 @@ int main() {
     BFS(0, graph);
     return 0;
 }
+*/
+/**
  
+ Les techniques BFS et DFS sont toutes deux essentielles pour parcourir les graphes, chacune avec ses forces et ses faiblesses. La BFS est optimale pour trouver le chemin le plus court dans les graphes non pondérés, tandis que la DFS est mieux adaptée pour explorer tous les chemins possibles. La compréhension de ces techniques est essentielle pour mettre en œuvre des algorithmes de recherche efficaces dans diverses applications, notamment l'apprentissage automatique et l'intelligence artificielle.
+ 
+ Recherche en profondeur (DFS)
+ DFS est une autre technique de parcours qui explore autant que possible chaque branche avant de revenir en arrière. Cette méthode est utile pour les scénarios où vous devez explorer tous les chemins possibles, comme dans la résolution d'énigmes ou la recherche de chemin dans les labyrinthes.
+ 
+ 0 1 3 4 2 Program ended with exit code: 0
+ */
+
+#include <iostream>
+#include <list>
+using namespace std;
+
+class Graph {
+    int V; // Number of vertices
+    list<int> *adj; // Pointer to an array containing adjacency lists
+
+    void DFSUtil(int v, bool visited[]);
+
+public:
+    Graph(int V);
+    void addEdge(int v, int w);
+    void DFS(int v);
+};
+
+Graph::Graph(int V) {
+    this->V = V;
+    adj = new list<int>[V];
+}
+
+void Graph::addEdge(int v, int w) {
+    adj[v].push_back(w); // Add w to v's list.
+}
+
+void Graph::DFSUtil(int v, bool visited[]) {
+    visited[v] = true;
+    cout << v << " ";
+
+    for (auto i = adj[v].begin(); i != adj[v].end(); ++i) {
+        if (!visited[*i])
+            DFSUtil(*i, visited);
+    }
+}
+
+void Graph::DFS(int v) {
+    bool *visited = new bool[V];
+    for (int i = 0; i < V; i++)
+        visited[i] = false;
+
+    DFSUtil(v, visited);
+}
+
+int main() {
+    Graph g(5);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 3);
+    g.addEdge(1, 4);
+    g.DFS(0);
+    return 0;
+}
