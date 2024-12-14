@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDFDFCE32D04D00F0050E80B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDFDFCE22D04D00F0050E80B /* main.cpp */; };
+		CDFDFD4D2D05889B0050E80B /* libboost_date_time-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDFD4B2D05889B0050E80B /* libboost_date_time-mt.a */; };
+		CDFDFD4E2D05889B0050E80B /* libboost_date_time-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDFD4C2D05889B0050E80B /* libboost_date_time-mt.dylib */; };
+		CDFDFD512D058E400050E80B /* libboost_chrono.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDFD4F2D058E400050E80B /* libboost_chrono.a */; };
+		CDFDFD522D058E400050E80B /* libboost_chrono.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDFD502D058E400050E80B /* libboost_chrono.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDFDFCDD2D04D00F0050E80B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CDFDFCDF2D04D00F0050E80B /* BoostTrial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoostTrial; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDFCE22D04D00F0050E80B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDFDFCEC2D0582550050E80B /* weighted_peaks_over_threshold.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_peaks_over_threshold.hpp; sourceTree = "<group>"; };
+		CDFDFCED2D0582550050E80B /* times2_iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = times2_iterator.hpp; sourceTree = "<group>"; };
+		CDFDFCEE2D0582550050E80B /* moment.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = moment.hpp; sourceTree = "<group>"; };
+		CDFDFCEF2D0582550050E80B /* p_square_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p_square_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFCF02D0582550050E80B /* weighted_density.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_density.hpp; sourceTree = "<group>"; };
+		CDFDFCF12D0582550050E80B /* extended_p_square_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = extended_p_square_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFCF22D0582550050E80B /* min.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = min.hpp; sourceTree = "<group>"; };
+		CDFDFCF32D0582550050E80B /* sum_kahan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sum_kahan.hpp; sourceTree = "<group>"; };
+		CDFDFCF42D0582550050E80B /* variance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = variance.hpp; sourceTree = "<group>"; };
+		CDFDFCF52D0582550050E80B /* density.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = density.hpp; sourceTree = "<group>"; };
+		CDFDFCF62D0582550050E80B /* weighted_covariance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_covariance.hpp; sourceTree = "<group>"; };
+		CDFDFCF72D0582550050E80B /* with_error.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = with_error.hpp; sourceTree = "<group>"; };
+		CDFDFCF82D0582550050E80B /* weighted_tail_variate_means.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_tail_variate_means.hpp; sourceTree = "<group>"; };
+		CDFDFCF92D0582550050E80B /* weighted_sum_kahan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_sum_kahan.hpp; sourceTree = "<group>"; };
+		CDFDFCFA2D0582550050E80B /* skewness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = skewness.hpp; sourceTree = "<group>"; };
+		CDFDFCFB2D0582550050E80B /* weighted_kurtosis.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_kurtosis.hpp; sourceTree = "<group>"; };
+		CDFDFCFC2D0582550050E80B /* median.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = median.hpp; sourceTree = "<group>"; };
+		CDFDFCFD2D0582550050E80B /* rolling_window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_window.hpp; sourceTree = "<group>"; };
+		CDFDFCFE2D0582550050E80B /* rolling_variance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_variance.hpp; sourceTree = "<group>"; };
+		CDFDFCFF2D0582550050E80B /* tail_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tail_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD002D0582550050E80B /* tail_variate_means.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tail_variate_means.hpp; sourceTree = "<group>"; };
+		CDFDFD012D0582550050E80B /* weighted_p_square_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_p_square_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFD022D0582550050E80B /* weighted_p_square_cumulative_distribution.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_p_square_cumulative_distribution.hpp; sourceTree = "<group>"; };
+		CDFDFD032D0582550050E80B /* weighted_tail_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_tail_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD042D0582550050E80B /* rolling_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_sum.hpp; sourceTree = "<group>"; };
+		CDFDFD052D0582550050E80B /* weighted_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD062D0582550050E80B /* weighted_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_sum.hpp; sourceTree = "<group>"; };
+		CDFDFD072D0582550050E80B /* error_of.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = error_of.hpp; sourceTree = "<group>"; };
+		CDFDFD082D0582550050E80B /* tail_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tail_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFD092D0582560050E80B /* pot_tail_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pot_tail_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD0A2D0582560050E80B /* stats.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stats.hpp; sourceTree = "<group>"; };
+		CDFDFD0C2D0582560050E80B /* covariate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = covariate.hpp; sourceTree = "<group>"; };
+		CDFDFD0D2D0582560050E80B /* error_of_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = error_of_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD0E2D0582560050E80B /* max.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = max.hpp; sourceTree = "<group>"; };
+		CDFDFD0F2D0582560050E80B /* mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mean.hpp; sourceTree = "<group>"; };
+		CDFDFD102D0582560050E80B /* tail.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tail.hpp; sourceTree = "<group>"; };
+		CDFDFD112D0582560050E80B /* extended_p_square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = extended_p_square.hpp; sourceTree = "<group>"; };
+		CDFDFD122D0582560050E80B /* p_square_cumulative_distribution.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p_square_cumulative_distribution.hpp; sourceTree = "<group>"; };
+		CDFDFD132D0582560050E80B /* covariance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = covariance.hpp; sourceTree = "<group>"; };
+		CDFDFD152D0582560050E80B /* quantile_probability.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quantile_probability.hpp; sourceTree = "<group>"; };
+		CDFDFD162D0582560050E80B /* weighted_tail_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_tail_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFD172D0582560050E80B /* weighted_median.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_median.hpp; sourceTree = "<group>"; };
+		CDFDFD182D0582560050E80B /* peaks_over_threshold.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = peaks_over_threshold.hpp; sourceTree = "<group>"; };
+		CDFDFD192D0582560050E80B /* count.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = count.hpp; sourceTree = "<group>"; };
+		CDFDFD1A2D0582560050E80B /* kurtosis.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kurtosis.hpp; sourceTree = "<group>"; };
+		CDFDFD1B2D0582560050E80B /* weighted_skewness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_skewness.hpp; sourceTree = "<group>"; };
+		CDFDFD1C2D0582560050E80B /* rolling_moment.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_moment.hpp; sourceTree = "<group>"; };
+		CDFDFD1D2D0582560050E80B /* pot_quantile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pot_quantile.hpp; sourceTree = "<group>"; };
+		CDFDFD1E2D0582560050E80B /* sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sum.hpp; sourceTree = "<group>"; };
+		CDFDFD1F2D0582560050E80B /* p_square_cumul_dist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p_square_cumul_dist.hpp; sourceTree = "<group>"; };
+		CDFDFD202D0582560050E80B /* weighted_extended_p_square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_extended_p_square.hpp; sourceTree = "<group>"; };
+		CDFDFD212D0582560050E80B /* weighted_variance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_variance.hpp; sourceTree = "<group>"; };
+		CDFDFD222D0582560050E80B /* weighted_moment.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_moment.hpp; sourceTree = "<group>"; };
+		CDFDFD232D0582560050E80B /* tail_variate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tail_variate.hpp; sourceTree = "<group>"; };
+		CDFDFD242D0582560050E80B /* rolling_count.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_count.hpp; sourceTree = "<group>"; };
+		CDFDFD252D0582560050E80B /* weighted_p_square_cumul_dist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weighted_p_square_cumul_dist.hpp; sourceTree = "<group>"; };
+		CDFDFD262D0582560050E80B /* rolling_mean.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rolling_mean.hpp; sourceTree = "<group>"; };
+		CDFDFD272D0582560050E80B /* accumulators_fwd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulators_fwd.hpp; sourceTree = "<group>"; };
+		CDFDFD292D0582560050E80B /* features.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = features.hpp; sourceTree = "<group>"; };
+		CDFDFD2A2D0582560050E80B /* external.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = external.hpp; sourceTree = "<group>"; };
+		CDFDFD2B2D0582560050E80B /* accumulator_concept.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulator_concept.hpp; sourceTree = "<group>"; };
+		CDFDFD2C2D0582560050E80B /* accumulator_base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulator_base.hpp; sourceTree = "<group>"; };
+		CDFDFD2D2D0582560050E80B /* extractor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = extractor.hpp; sourceTree = "<group>"; };
+		CDFDFD2F2D0582560050E80B /* external_accumulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = external_accumulator.hpp; sourceTree = "<group>"; };
+		CDFDFD302D0582560050E80B /* value_accumulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = value_accumulator.hpp; sourceTree = "<group>"; };
+		CDFDFD312D0582560050E80B /* droppable_accumulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = droppable_accumulator.hpp; sourceTree = "<group>"; };
+		CDFDFD322D0582560050E80B /* reference_accumulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reference_accumulator.hpp; sourceTree = "<group>"; };
+		CDFDFD342D0582560050E80B /* weights.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weights.hpp; sourceTree = "<group>"; };
+		CDFDFD352D0582560050E80B /* accumulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulator.hpp; sourceTree = "<group>"; };
+		CDFDFD362D0582560050E80B /* weight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = weight.hpp; sourceTree = "<group>"; };
+		CDFDFD372D0582560050E80B /* sample.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sample.hpp; sourceTree = "<group>"; };
+		CDFDFD382D0582560050E80B /* depends_on.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depends_on.hpp; sourceTree = "<group>"; };
+		CDFDFD392D0582560050E80B /* accumulator_set.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulator_set.hpp; sourceTree = "<group>"; };
+		CDFDFD3A2D0582560050E80B /* accumulators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = accumulators.hpp; sourceTree = "<group>"; };
+		CDFDFD3B2D0582560050E80B /* statistics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = statistics.hpp; sourceTree = "<group>"; };
+		CDFDFD3D2D0582560050E80B /* functional_fwd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functional_fwd.hpp; sourceTree = "<group>"; };
+		CDFDFD3E2D0582560050E80B /* functional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functional.hpp; sourceTree = "<group>"; };
+		CDFDFD402D0582560050E80B /* function1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function1.hpp; sourceTree = "<group>"; };
+		CDFDFD412D0582560050E80B /* function3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function3.hpp; sourceTree = "<group>"; };
+		CDFDFD422D0582560050E80B /* function2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function2.hpp; sourceTree = "<group>"; };
+		CDFDFD432D0582560050E80B /* function4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function4.hpp; sourceTree = "<group>"; };
+		CDFDFD442D0582560050E80B /* pod_singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pod_singleton.hpp; sourceTree = "<group>"; };
+		CDFDFD452D0582560050E80B /* function_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = function_n.hpp; sourceTree = "<group>"; };
+		CDFDFD472D0582560050E80B /* vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		CDFDFD482D0582560050E80B /* complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = complex.hpp; sourceTree = "<group>"; };
+		CDFDFD492D0582560050E80B /* valarray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = valarray.hpp; sourceTree = "<group>"; };
+		CDFDFD4A2D0582560050E80B /* statistics_fwd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = statistics_fwd.hpp; sourceTree = "<group>"; };
+		CDFDFD4B2D05889B0050E80B /* libboost_date_time-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_date_time-mt.a"; path = "../../../../../../../../../../../../../usr/local/Cellar/boost/1.86.0_2/lib/libboost_date_time-mt.a"; sourceTree = "<group>"; };
+		CDFDFD4C2D05889B0050E80B /* libboost_date_time-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_date_time-mt.dylib"; path = "../../../../../../../../../../../../../usr/local/Cellar/boost/1.86.0_2/lib/libboost_date_time-mt.dylib"; sourceTree = "<group>"; };
+		CDFDFD4F2D058E400050E80B /* libboost_chrono.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_chrono.a; path = ../../../../../../../../../../../../../usr/local/Cellar/boost/1.86.0_2/lib/libboost_chrono.a; sourceTree = "<group>"; };
+		CDFDFD502D058E400050E80B /* libboost_chrono.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_chrono.dylib; path = ../../../../../../../../../../../../../usr/local/Cellar/boost/1.86.0_2/lib/libboost_chrono.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFDFCDC2D04D00F0050E80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDFD512D058E400050E80B /* libboost_chrono.a in Frameworks */,
+				CDFDFD522D058E400050E80B /* libboost_chrono.dylib in Frameworks */,
+				CDFDFD4D2D05889B0050E80B /* libboost_date_time-mt.a in Frameworks */,
+				CDFDFD4E2D05889B0050E80B /* libboost_date_time-mt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDFDFCD62D04D00F0050E80B = {
+			isa = PBXGroup;
+			children = (
+				CDFDFCE12D04D00F0050E80B /* BoostTrial */,
+				CDFDFCE02D04D00F0050E80B /* Products */,
+				CDFDFCE92D0582550050E80B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFDFCE02D04D00F0050E80B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFCDF2D04D00F0050E80B /* BoostTrial */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFDFCE12D04D00F0050E80B /* BoostTrial */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFCE22D04D00F0050E80B /* main.cpp */,
+			);
+			path = BoostTrial;
+			sourceTree = "<group>";
+		};
+		CDFDFCE92D0582550050E80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD4F2D058E400050E80B /* libboost_chrono.a */,
+				CDFDFD502D058E400050E80B /* libboost_chrono.dylib */,
+				CDFDFD4B2D05889B0050E80B /* libboost_date_time-mt.a */,
+				CDFDFD4C2D05889B0050E80B /* libboost_date_time-mt.dylib */,
+				CDFDFCEA2D0582550050E80B /* accumulators */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFDFCEA2D0582550050E80B /* accumulators */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFCEB2D0582550050E80B /* statistics */,
+				CDFDFD272D0582560050E80B /* accumulators_fwd.hpp */,
+				CDFDFD282D0582560050E80B /* framework */,
+				CDFDFD3A2D0582560050E80B /* accumulators.hpp */,
+				CDFDFD3B2D0582560050E80B /* statistics.hpp */,
+				CDFDFD3C2D0582560050E80B /* numeric */,
+				CDFDFD4A2D0582560050E80B /* statistics_fwd.hpp */,
+			);
+			name = accumulators;
+			path = "../../../../../../../../../../PremierProjet/Travaux C++/boost-iosx/boost/boost/accumulators";
+			sourceTree = "<group>";
+		};
+		CDFDFCEB2D0582550050E80B /* statistics */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFCEC2D0582550050E80B /* weighted_peaks_over_threshold.hpp */,
+				CDFDFCED2D0582550050E80B /* times2_iterator.hpp */,
+				CDFDFCEE2D0582550050E80B /* moment.hpp */,
+				CDFDFCEF2D0582550050E80B /* p_square_quantile.hpp */,
+				CDFDFCF02D0582550050E80B /* weighted_density.hpp */,
+				CDFDFCF12D0582550050E80B /* extended_p_square_quantile.hpp */,
+				CDFDFCF22D0582550050E80B /* min.hpp */,
+				CDFDFCF32D0582550050E80B /* sum_kahan.hpp */,
+				CDFDFCF42D0582550050E80B /* variance.hpp */,
+				CDFDFCF52D0582550050E80B /* density.hpp */,
+				CDFDFCF62D0582550050E80B /* weighted_covariance.hpp */,
+				CDFDFCF72D0582550050E80B /* with_error.hpp */,
+				CDFDFCF82D0582550050E80B /* weighted_tail_variate_means.hpp */,
+				CDFDFCF92D0582550050E80B /* weighted_sum_kahan.hpp */,
+				CDFDFCFA2D0582550050E80B /* skewness.hpp */,
+				CDFDFCFB2D0582550050E80B /* weighted_kurtosis.hpp */,
+				CDFDFCFC2D0582550050E80B /* median.hpp */,
+				CDFDFCFD2D0582550050E80B /* rolling_window.hpp */,
+				CDFDFCFE2D0582550050E80B /* rolling_variance.hpp */,
+				CDFDFCFF2D0582550050E80B /* tail_mean.hpp */,
+				CDFDFD002D0582550050E80B /* tail_variate_means.hpp */,
+				CDFDFD012D0582550050E80B /* weighted_p_square_quantile.hpp */,
+				CDFDFD022D0582550050E80B /* weighted_p_square_cumulative_distribution.hpp */,
+				CDFDFD032D0582550050E80B /* weighted_tail_mean.hpp */,
+				CDFDFD042D0582550050E80B /* rolling_sum.hpp */,
+				CDFDFD052D0582550050E80B /* weighted_mean.hpp */,
+				CDFDFD062D0582550050E80B /* weighted_sum.hpp */,
+				CDFDFD072D0582550050E80B /* error_of.hpp */,
+				CDFDFD082D0582550050E80B /* tail_quantile.hpp */,
+				CDFDFD092D0582560050E80B /* pot_tail_mean.hpp */,
+				CDFDFD0A2D0582560050E80B /* stats.hpp */,
+				CDFDFD0B2D0582560050E80B /* variates */,
+				CDFDFD0D2D0582560050E80B /* error_of_mean.hpp */,
+				CDFDFD0E2D0582560050E80B /* max.hpp */,
+				CDFDFD0F2D0582560050E80B /* mean.hpp */,
+				CDFDFD102D0582560050E80B /* tail.hpp */,
+				CDFDFD112D0582560050E80B /* extended_p_square.hpp */,
+				CDFDFD122D0582560050E80B /* p_square_cumulative_distribution.hpp */,
+				CDFDFD132D0582560050E80B /* covariance.hpp */,
+				CDFDFD142D0582560050E80B /* parameters */,
+				CDFDFD162D0582560050E80B /* weighted_tail_quantile.hpp */,
+				CDFDFD172D0582560050E80B /* weighted_median.hpp */,
+				CDFDFD182D0582560050E80B /* peaks_over_threshold.hpp */,
+				CDFDFD192D0582560050E80B /* count.hpp */,
+				CDFDFD1A2D0582560050E80B /* kurtosis.hpp */,
+				CDFDFD1B2D0582560050E80B /* weighted_skewness.hpp */,
+				CDFDFD1C2D0582560050E80B /* rolling_moment.hpp */,
+				CDFDFD1D2D0582560050E80B /* pot_quantile.hpp */,
+				CDFDFD1E2D0582560050E80B /* sum.hpp */,
+				CDFDFD1F2D0582560050E80B /* p_square_cumul_dist.hpp */,
+				CDFDFD202D0582560050E80B /* weighted_extended_p_square.hpp */,
+				CDFDFD212D0582560050E80B /* weighted_variance.hpp */,
+				CDFDFD222D0582560050E80B /* weighted_moment.hpp */,
+				CDFDFD232D0582560050E80B /* tail_variate.hpp */,
+				CDFDFD242D0582560050E80B /* rolling_count.hpp */,
+				CDFDFD252D0582560050E80B /* weighted_p_square_cumul_dist.hpp */,
+				CDFDFD262D0582560050E80B /* rolling_mean.hpp */,
+			);
+			path = statistics;
+			sourceTree = "<group>";
+		};
+		CDFDFD0B2D0582560050E80B /* variates */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD0C2D0582560050E80B /* covariate.hpp */,
+			);
+			path = variates;
+			sourceTree = "<group>";
+		};
+		CDFDFD142D0582560050E80B /* parameters */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD152D0582560050E80B /* quantile_probability.hpp */,
+			);
+			path = parameters;
+			sourceTree = "<group>";
+		};
+		CDFDFD282D0582560050E80B /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD292D0582560050E80B /* features.hpp */,
+				CDFDFD2A2D0582560050E80B /* external.hpp */,
+				CDFDFD2B2D0582560050E80B /* accumulator_concept.hpp */,
+				CDFDFD2C2D0582560050E80B /* accumulator_base.hpp */,
+				CDFDFD2D2D0582560050E80B /* extractor.hpp */,
+				CDFDFD2E2D0582560050E80B /* accumulators */,
+				CDFDFD332D0582560050E80B /* parameters */,
+				CDFDFD382D0582560050E80B /* depends_on.hpp */,
+				CDFDFD392D0582560050E80B /* accumulator_set.hpp */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		CDFDFD2E2D0582560050E80B /* accumulators */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD2F2D0582560050E80B /* external_accumulator.hpp */,
+				CDFDFD302D0582560050E80B /* value_accumulator.hpp */,
+				CDFDFD312D0582560050E80B /* droppable_accumulator.hpp */,
+				CDFDFD322D0582560050E80B /* reference_accumulator.hpp */,
+			);
+			path = accumulators;
+			sourceTree = "<group>";
+		};
+		CDFDFD332D0582560050E80B /* parameters */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD342D0582560050E80B /* weights.hpp */,
+				CDFDFD352D0582560050E80B /* accumulator.hpp */,
+				CDFDFD362D0582560050E80B /* weight.hpp */,
+				CDFDFD372D0582560050E80B /* sample.hpp */,
+			);
+			path = parameters;
+			sourceTree = "<group>";
+		};
+		CDFDFD3C2D0582560050E80B /* numeric */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD3D2D0582560050E80B /* functional_fwd.hpp */,
+				CDFDFD3E2D0582560050E80B /* functional.hpp */,
+				CDFDFD3F2D0582560050E80B /* detail */,
+				CDFDFD462D0582560050E80B /* functional */,
+			);
+			path = numeric;
+			sourceTree = "<group>";
+		};
+		CDFDFD3F2D0582560050E80B /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD402D0582560050E80B /* function1.hpp */,
+				CDFDFD412D0582560050E80B /* function3.hpp */,
+				CDFDFD422D0582560050E80B /* function2.hpp */,
+				CDFDFD432D0582560050E80B /* function4.hpp */,
+				CDFDFD442D0582560050E80B /* pod_singleton.hpp */,
+				CDFDFD452D0582560050E80B /* function_n.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		CDFDFD462D0582560050E80B /* functional */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDFD472D0582560050E80B /* vector.hpp */,
+				CDFDFD482D0582560050E80B /* complex.hpp */,
+				CDFDFD492D0582560050E80B /* valarray.hpp */,
+			);
+			path = functional;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFDFCDE2D04D00F0050E80B /* BoostTrial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDFCE62D04D00F0050E80B /* Build configuration list for PBXNativeTarget "BoostTrial" */;
+			buildPhases = (
+				CDFDFCDB2D04D00F0050E80B /* Sources */,
+				CDFDFCDC2D04D00F0050E80B /* Frameworks */,
+				CDFDFCDD2D04D00F0050E80B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoostTrial;
+			productName = BoostTrial;
+			productReference = CDFDFCDF2D04D00F0050E80B /* BoostTrial */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFDFCD72D04D00F0050E80B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CDFDFCDE2D04D00F0050E80B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CDFDFCDA2D04D00F0050E80B /* Build configuration list for PBXProject "BoostTrial" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFDFCD62D04D00F0050E80B;
+			productRefGroup = CDFDFCE02D04D00F0050E80B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFDFCDE2D04D00F0050E80B /* BoostTrial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFDFCDB2D04D00F0050E80B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDFCE32D04D00F0050E80B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDFDFCE42D04D00F0050E80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/Cellar/boost/1.86.0_2/include/boost/;
+			};
+			name = Debug;
+		};
+		CDFDFCE52D04D00F0050E80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/Cellar/boost/1.86.0_2/include/boost/,
+					/Cellar/boost/1.86.0_2/include/boost/,
+					"\"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include\"/**",
+					/usr/local/include/,
+					"\"$(inherited) $(BOOST)/include/boost-$(BOOST_VERSION)/\"",
+					"\"$(inherited) $(BOOST)/include/boost-$(BOOST_VERSION)/\"",
+					"\"$(inherited) $(BOOST)/include/boost-$(BOOST_VERSION)/\"",
+					"$(inherited)$(BOOST)/include/boost",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"/Cellar/boost/1.86.0_2/lib/boost/**",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "\"$(inherited) $(BOOST)/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"\"-I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/include/c++/v1/\"",
+					"\"-I/usr/local/bin/\"",
+					"\"-I/usr/local/include/\"",
+					"\"-boost thread -Iboost system\"",
+				);
+				SDKROOT = iphoneos;
+				"SYSTEM_HEADER_SEARCH_PATHS[arch=*]" = /Cellar/boost/1.86.0_2/include/boost/;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/Cellar/boost/1.86.0_2/include/boost/;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/include/Cellar/boost/1.86.0_2/include/boost/,
+					/Cellar/boost/1.86.0_2/include/boost/,
+				);
+			};
+			name = Release;
+		};
+		CDFDFCE72D04D00F0050E80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.86.0_2/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDFDFCE82D04D00F0050E80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_VERSION = "";
+				"HEADER_SEARCH_PATHS[sdk=macosx*]" = (
+					/usr/local/Cellar/boost/1.86.0.2/include/boost/,
+					/usr/local/include/,
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.86.0_2/lib,
+					/usr/local/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/boost/1.86.0.2/lib/boost/,
+					/usr/local/include,
+					"\"$(inherited) $(BOOST)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-L/usr/local/Cellar/boost/1.86.0.2/include/boost/",
+					"-L/usr/local/include/",
+					"$(BOOST)/lib/libboost_system-xgcc48-mt-$(BOOST_VERSION)-macosx.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/boost/1.86.0.2/include/boost/,
+					/usr/local/include/,
+					"\"$(PODS_ROOT)/Boost\"",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFDFCDA2D04D00F0050E80B /* Build configuration list for PBXProject "BoostTrial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDFCE42D04D00F0050E80B /* Debug */,
+				CDFDFCE52D04D00F0050E80B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDFCE62D04D00F0050E80B /* Build configuration list for PBXNativeTarget "BoostTrial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDFCE72D04D00F0050E80B /* Debug */,
+				CDFDFCE82D04D00F0050E80B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFDFCD72D04D00F0050E80B /* Project object */;
+}
